@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="url" value="https://www.ebay.com/"/>
+    <test verbose="2" preserve-order="true" name="C:/Users/asus/Desktop/assignment/.idea">
+        <classes>
+           <class name="com.ebay.Main">
+            <methods>
+                <include name="setup"/>
+            </methods>
+           </class>
+            <class name="com.ebay.SelectMobileTest">
+                <methods>
+                    <include name="getUrl"/>
+                    <include name="validateUrl"/>
+                    <include name="selectCategory"/>
+                    <include name="searchMobile"/>
+                    <include name="selectApple"/>
+                    <include name="selectFirstItem"/>
+                </methods>
+            </class>
+
+            <class name="com.ebay.PurchaseMobileTest">
+                <methods>
+                    <include name="selectNewWindow"/>
+                    <include name="selectModel"/>
+                    <include name="selectCarrier"/>
+                    <include name="selectStorageCapacity"/>
+                    <include name="selectColor"/>
+                    <include name="selectCosmetic"/>
+                    <include name="getItemName"/>
+                    <include name="getItemPrice"/>
+                    <include name="getItemCondition"/>
+                    <include name="getItemQuantity"/>
+                    <include name="addItemToCart"/>
+                    <include name="checkItemName"/>
+                    <include name="checkItemPrice"/>
+                    <include name="checkQuantity"/>
+                    <include name="getShippingValue"/>
+                </methods>
+            </class>
+            <class name="com.ebay.Main">
+                <methods>
+                    <include name="tearDown"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
